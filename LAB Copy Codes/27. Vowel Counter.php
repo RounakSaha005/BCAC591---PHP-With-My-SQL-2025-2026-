@@ -1,0 +1,13 @@
+<?php
+$sentence = "Vowel Counter";
+$sentence = strtolower($sentence);
+$vowels = ['a', 'e', 'i', 'o', 'u'];
+$count = 0;
+for ($i = 0; $i < strlen($sentence); $i++) {
+    if (in_array($sentence[$i], $vowels)) {
+        $count++;
+    }
+}
+echo "The sentence is: \"$sentence\"<br>";
+echo "Number of vowels: $count";
+?>
